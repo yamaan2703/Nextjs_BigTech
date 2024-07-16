@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Navbar from "@/components/atoms/Navbar/Navbar";
 
 export default function Home() {
   return (
-    <main>
-      Hello
-    </main>
+      <main>
+        <Navbar />
+      </main>
   );
 }
