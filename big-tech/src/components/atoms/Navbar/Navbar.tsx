@@ -59,7 +59,7 @@ function Navbar() {
         </div>
       </div>
       <div
-        className={`fixed inset-y-0 right-0 w-64 bg-#030b15 bg-opacity-75 z-50 transform ${
+        className={`fixed bg-[#030b15] inset-y-0 right-0 w-64 z-50 transform ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out`}
       >
