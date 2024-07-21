@@ -1,6 +1,7 @@
 import Button from "@/components/atoms/Button/Button";
 import HeroImage from "@/components/atoms/Hero/HeroImage";
 import Navbar from "@/components/atoms/Navbar/Navbar";
+import Partners from "@/components/atoms/Partners/Partners";
 import Timer from "@/components/atoms/Timer/Timer";
 import Image from "next/image";
 import { FaCircle } from "react-icons/fa6";
@@ -11,6 +12,7 @@ export default function Home() {
       <Navbar />
       <HeroImage />
       <Timer />
+
       <div className="about_section mt-10 px-4 sm:px-6 lg:px-8 max-w-[1300px] mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="flex justify-center p-2">
@@ -42,6 +44,8 @@ export default function Home() {
         </div>
       </div>
     </div>
+
+      <Partners />
     </main>
   );
 }
