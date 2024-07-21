@@ -6,6 +6,18 @@ function HeroImage() {
     <div className="relative w-full h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/images/banner_bg.jpg)', backgroundColor: '#000' }}>
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       <div className="absolute inset-0 flex flex-col justify-center items-center px-4 text-center max-w-[1300px] mx-auto">
+        <div className='absolute top-20 left-4 w-16 h-16 sm:w-16 sm:h-16 md:w-28 md:h-28 bounce'>
+          <Image src={"/images/banner_ball.png"} alt='Banner Ball 1' width={1000} height={1000}/>
+        </div>
+        
+        <div className='absolute top-10 right-4 sm:right-4 md:right-14 w-8 h-8 sm:w-8 sm:h-8 md:w-16 md:h-16'>
+          <Image src={"/images/banner_ball.png"} alt='Banner Ball 1' width={1000} height={1000}/>
+        </div>
+
+        
+        <div className='absolute bottom-10 right-4 w-24 h-24 sm:w-24 sm:h-24 md:w-36 md:h-36'>
+          <Image src={"/images/banner_ball.png"} alt='Banner Ball 1' width={1000} height={1000}/>
+        </div>
         <div className='w-10 h-10 my-3'>
           <Image src={"/images/fire.png"} alt='fire icon' width={1000} height={1000}/>
         </div>
