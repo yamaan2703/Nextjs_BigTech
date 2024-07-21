@@ -95,7 +95,7 @@ function Navbar() {
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#00c4f4] transition-all duration-300 group-hover:w-full"></span>
           </p>
         </div>
-        <div className="absolute bottom-0 w-full p-4 bg-#030b15">
+        <div className="absolute bottom-0 w-full">
           <Button label="BUY NOW" />
         </div>
       </div>
