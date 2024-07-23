@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCircle } from 'react-icons/fa6';
+import { FaCircle } from 'react-icons/fa';
 import Image from 'next/image';
 
 function Partners() {
@@ -18,23 +18,24 @@ function Partners() {
 
   return (
     <div className='mt-10 bg-[#030b15]'>
-      <div className="flex items-center justify-center gap-3 py-3 font-semibold text-white">
+      <div className="flex items-center justify-center gap-3 py-10 font-semibold text-[14px] text-white">
         <FaCircle className="text-[10px] text-[#00c4f4]" />
         <p>OUR PARTNERS</p>
         <FaCircle className="text-[10px] text-[#00c4f4]" />
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 mx-4 md:mx-20">
+      <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 border border-gray-800 mx-4 sm:mx-10 lg:mx-20'>
         {partnerImages.map((item, index) => (
-          <div key={index} className="relative overflow-hidden group">
-            <div className="absolute inset-0 bg-black opacity-60 transition-opacity duration-300 ease-in-out group-hover:opacity-0"></div>
-            <Image
-              src={item.image}
-              alt={`Partner ${index + 1}`}
-              width={150}
-              height={150}
-              className="object-cover transition-opacity duration-300 ease-in-out group-hover:opacity-100"
-            />
+          <div key={index} className='flex justify-center border border-gray-800 items-center p-3 sm:p-5'>
+            <div className='partner-image-wrapper'>
+              <Image
+                src={item.image}
+                width={100}
+                height={100}
+                alt={`Partner ${index + 1}`}
+                className='partner-image transition-opacity duration-300 ease-in-out opacity-50 hover:opacity-100'
+              />
+            </div>
           </div>
         ))}
       </div>
